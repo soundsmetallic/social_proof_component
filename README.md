@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-[Screenshot](./screenshot.jpg)
+[Screenshot](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/soundsmetallic/social_proof_component)
+- [Live Site URL](https://soundsmetallic.github.io/social_proof_component/)
 
 ## My process
 
