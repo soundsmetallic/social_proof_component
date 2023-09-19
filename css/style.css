@@ -1,0 +1,239 @@
+/* General Styling */
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Background */
+main {
+  width: 100vw;
+  height: 100vh;
+  background: top left/40% no-repeat url(../images/bg-pattern-top-desktop.svg), bottom right/75% no-repeat url(../images/bg-pattern-bottom-desktop.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer, #mobile-attribution {
+  position: absolute;
+  bottom: 0;
+  color: hsl(300, 43%, 22%);
+}
+footer a, footer a:link, footer a:visited, #mobile-attribution a, #mobile-attribution a:link, #mobile-attribution a:visited {
+  color: hsl(333, 80%, 67%);
+}
+
+#mobile-attribution {
+  display: none;
+}
+
+/* Main Card Styling */
+.social-proof-card {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Part Styling */
+.top, .reviews {
+  display: flex;
+}
+
+.top > * {
+  flex: 1;
+}
+
+h1, p, li {
+  color: hsl(300, 43%, 22%);
+}
+
+h1 {
+  font-size: 3.07rem;
+  width: 325px;
+  line-height: 2.75rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.copy p {
+  width: 380px;
+}
+
+ul {
+  margin-top: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  background: hsl(300, 24%, 96%);
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+  width: 75%;
+  font-weight: 700;
+}
+ul li:nth-child(2) {
+  margin-left: 2.5rem;
+}
+ul li:last-child {
+  margin-left: 5rem;
+}
+ul .stars {
+  width: 100px;
+  height: 1rem;
+  background: space url(../images/icon-star.svg);
+  margin: 0 1.5rem;
+}
+ul p {
+  margin-right: 1rem;
+}
+
+/* Bottom Part */
+.reviews {
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.reviews img {
+  border-radius: 50%;
+  float: left;
+  max-width: 2.75rem;
+  margin-right: 1rem;
+}
+.reviews > *:nth-child(2) {
+  margin-top: 1rem;
+}
+.reviews > *:last-child {
+  margin-top: 2rem;
+}
+
+.reviews > * {
+  background: hsl(300, 43%, 22%);
+  width: 32%;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  padding: 1.85rem;
+  height: 12.5%;
+}
+
+.reviews p {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+
+p.status {
+  color: hsl(333, 80%, 67%);
+  margin-top: 0.15rem;
+}
+
+p.name {
+  margin-bottom: 0.15rem;
+}
+
+p.comment {
+  margin: 2rem auto 0 auto;
+  height: 72px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1338px) {
+  p.comment {
+    height: 90px;
+  }
+}
+@media screen and (max-width: 1145px) {
+  p.comment {
+    height: 108px;
+  }
+}
+@media screen and (max-width: 1110px) {
+  ul .stars {
+    margin: 0 0.5rem;
+  }
+  ul p {
+    margin-right: 0.5rem;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .profile-card {
+    padding: 1.5rem;
+  }
+}
+@media screen and (max-width: 990px) {
+  .social-proof-card {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 830px) {
+  .social-proof-card {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 780px) {
+  main {
+    height: 100%;
+    position: relative;
+    background: top left/40% no-repeat url(../images/bg-pattern-top-mobile.svg), bottom right/no-repeat url(../images/bg-pattern-bottom-mobile.svg);
+  }
+  .social-proof-card {
+    height: 100%;
+    width: 87.5%;
+    min-width: 330px;
+  }
+  .top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .top .ratings {
+    width: 100%;
+  }
+  .top ul li {
+    width: 100%;
+    margin-left: unset;
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .top .stars {
+    margin: 0 auto;
+  }
+  .top .ratings p {
+    margin: 0.75rem 0 0 0;
+  }
+  .top .copy p {
+    width: 275px;
+    text-align: center;
+  }
+  .top h1 {
+    font-size: 2rem;
+    width: 235px;
+    text-align: center;
+    line-height: 1.75rem;
+    margin-top: 4rem;
+  }
+  .reviews {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-card {
+    width: 100%;
+    height: unset;
+  }
+  p.comment {
+    height: unset;
+  }
+  .reviews > *:last-child {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  footer {
+    display: none;
+  }
+  #mobile-attribution {
+    display: unset;
+  }
+}
